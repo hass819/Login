@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+
+    <div class="container group my-5 text-center">
+        <div class="form-container m-auto w-75 p-5" id="login-form">
+            <h1 class="text-white">Smart Login System</h1>
+            <input type="email" class="form-control my-3" id="login-email" placeholder="Enter your Email" required>
+            <input type="password" class="form-control my-3" id="login-password" placeholder="Enter your Password" required>
+            <p id="login-error" class="error-message text-danger"></p>
+            <button onclick="login()" class="btn btn-outline-info w-100 my-3">Login</button>
+            <p class="text-white">Don't have an account? <a class="text-white" href="toggle" onclick="toggleForms()">Sign up</a></p>
+        </div>
+
+        <div class="form-container m-auto w-75 p-5" id="signup-form" style="display: none;">
+            <input type="text" class="form-control my-3" id="signup-username" placeholder="Username" required>
+            <input type="email" class="form-control my-3" id="signup-email" placeholder="Email" required>
+            <input type="password" class="form-control my-3" id="signup-password" placeholder="Password" required>
+            <button onclick="signup()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p id="signup-error" class="error-message text-danger"></p>
+            <p class="text-white">Already have an account? <a class="text-white" href="sgin" onclick="toggleForms()">Sign in</a></p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar" style="display: none;">
+        <div class="container mt-0 d-flex justify-content-between">
+            <div>
+                <a class="navbar-brand" href="#">SMART LOGIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto d-flex justify-content-between">
+                    <li class="nav-item ms-auto">
+                        <a class="nav-link btn btn-outline-warning" href="logout" onclick="logout()">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

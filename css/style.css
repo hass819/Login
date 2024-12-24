@@ -1,0 +1,29 @@
+ @font-face {
+    font-family: 'TitilliumWeb-R';
+    src: url(../webfonts/TitilliumWeb-Regular.ttf);
+}
+
+body {
+    font-family: 'TitilliumWeb-R';
+    background-color: #24353F;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #17a2b8;
+   
+}
+
+input {
+    --bs-body-bg: transparent;
+    color: #495057 ;
+}
+
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    text-align: center;
+} 
+
+
+
